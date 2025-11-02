@@ -1,9 +1,9 @@
-# ZevEx 🧠  
+# ZevEx 
 ### Zero-Shot Cross-Lingual Event Extraction using XLM-RoBERTa-Large (SQuAD2)
 
 ---
 
-## 📘 Overview
+## Overview
 
 **ZevEx** is a research project that investigates **zero-shot cross-lingual transfer learning** for **event extraction** using the **`xlm-roberta-large-squad2`** model.  
 The model, originally fine-tuned on the **SQuAD2 (Question Answering)** dataset, is repurposed to extract event information by answering **three event-specific questions** for each sentence.  
@@ -11,7 +11,7 @@ Testing was performed on **Gujarati** and **Marathi** event datasets without any
 
 ---
 
-## 🎯 Research Objective
+## Research Objective
 
 - To perform **event extraction** through a **Question Answering (Q&A)** approach.  
 - To test the **cross-lingual generalization** ability of **`xlm-roberta-large-squad2`** for **Gujarati** and **Marathi** languages.  
@@ -19,9 +19,9 @@ Testing was performed on **Gujarati** and **Marathi** event datasets without any
 
 ---
 
-## ⚙️ Experimental Setup
+## Experimental Setup
 
-### 💡 Task
+### Task
 Each input sentence was transformed into **three Q&A pairs**, asking the model:
 
 1. **Event Actor** → *Who performed the event?*  
@@ -30,7 +30,7 @@ Each input sentence was transformed into **three Q&A pairs**, asking the model:
 
 ---
 
-### 🧩 Training Data
+### Training Data
 
 - **Language:** English  
 - **Base Model:** `xlm-roberta-large-squad2`  
@@ -46,7 +46,7 @@ Each input sentence was transformed into **three Q&A pairs**, asking the model:
 
 ---
 
-### 🌏 Testing Data
+### Testing Data
 
 - **Languages Tested:** Gujarati, Marathi  
 - **Dataset Type:** Custom, event-based Q&A dataset  
@@ -54,7 +54,7 @@ Each input sentence was transformed into **three Q&A pairs**, asking the model:
 
 ---
 
-## 🧠 Models Evaluated
+## Models Evaluated
 
 | Model Name | Type | Parameters | Purpose |
 |-------------|------|-------------|----------|
@@ -64,7 +64,7 @@ Each input sentence was transformed into **three Q&A pairs**, asking the model:
 
 ---
 
-## 📊 Results
+##  Results
 
 | Language | Model | Exact Match (EM) | F1 Score | Remarks |
 |-----------|--------|------------------|-----------|----------|
@@ -75,7 +75,7 @@ Each input sentence was transformed into **three Q&A pairs**, asking the model:
 
 ---
 
-## 🧪 Key Findings
+##  Key Findings
 
 - **`xlm-roberta-large-squad2`** performed best across Gujarati and Marathi datasets.  
 - **Zero-shot transfer** successfully extracted event-related details (actor, type, reason) from regional language texts.  
@@ -84,14 +84,14 @@ Each input sentence was transformed into **three Q&A pairs**, asking the model:
 
 ---
 
-## 🚀 Conclusion
+##  Conclusion
 
 This study confirms that **multilingual QA-based transformers** like `xlm-roberta-large-squad2` can effectively generalize **event extraction tasks** to **low-resource Indian languages** through **zero-shot transfer learning**.  
 Despite some accuracy loss due to linguistic and script differences, the approach offers a promising foundation for **multilingual event understanding**.
 
 ---
 
-## 📚 Future Work
+##  Future Work
 
 - Create and fine-tune on manually annotated Gujarati and Marathi event datasets.  
 - Extend experiments to **Hindi**, **Tamil**, and **Bengali**.  
@@ -100,7 +100,7 @@ Despite some accuracy loss due to linguistic and script differences, the approac
 
 ---
 
-## 🧑‍💻 Tech Stack
+##  Tech Stack
 
 - **Model:** `xlm-roberta-large-squad2` (Hugging Face Transformers)  
 - **Framework:** PyTorch + Transformers  
