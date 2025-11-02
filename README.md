@@ -59,7 +59,7 @@ Each input sentence was transformed into **three Q&A pairs**, asking the model:
 | Model Name | Type | Parameters | Purpose |
 |-------------|------|-------------|----------|
 | `xlm-roberta-base` | Multilingual Transformer | ~270M | Baseline |
-| **`xlm-roberta-large-squad2`** | Multilingual QA Transformer | ~550M | ✅ Best Performing Model |
+| **`xlm-roberta-large-squad2`** | Multilingual QA Transformer | ~550M |  Best Performing Model |
 | `indic-bert` | Indic Language Transformer | ~120M | Comparative baseline |
 
 ---
@@ -69,7 +69,7 @@ Each input sentence was transformed into **three Q&A pairs**, asking the model:
 | Language | Model | Exact Match (EM) | F1 Score | Remarks |
 |-----------|--------|------------------|-----------|----------|
 | Gujarati | XLM-RoBERTa Base | 45.8 | 76.3 | Moderate performance |
-| **Gujarati** | **XLM-RoBERTa-Large (SQuAD2)** | **54.4** | **80.7** | ✅ Best Results |
+| **Gujarati** | **XLM-RoBERTa-Large (SQuAD2)** | **54.4** | **80.7** | Best Results |
 | Gujarati | IndicBERT | 39.2 | 68.5 | Weak cross-lingual generalization |
 | **Marathi** | **XLM-RoBERTa-Large (SQuAD2)** | **64.33** | **82.95** | Strong performance in Devanagari script |
 
